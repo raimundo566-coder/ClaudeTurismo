@@ -10,13 +10,16 @@ export default function Home() {
     <>
       <section className="relative flex min-h-[85vh] items-center overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1920&auto=format&fit=crop"
-          alt="Cachoeira na Chapada das Mesas"
+          src="https://upload.wikimedia.org/wikipedia/commons/1/10/Balneario_encontro_das_%C3%A1guas_-_Parque_Nacional_das_Chapadas_das_mesas.JPG"
+          alt="Balneário Encontro das Águas, Parque Nacional da Chapada das Mesas"
           fill
           priority
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/90 via-emerald-950/50 to-emerald-950/20" />
+        <p className="absolute bottom-2 right-3 z-10 text-[10px] text-white/60">
+          Foto: Wikimedia Commons
+        </p>
 
         <Container className="relative z-10 py-24 text-white">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-400">
