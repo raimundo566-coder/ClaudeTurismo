@@ -19,7 +19,7 @@ export async function generateMetadata({
   const destination = getDestination(slug);
   if (!destination) return {};
   return {
-    title: `${destination.name} | ClaudeTurismo`,
+    title: `${destination.name} | RAYDAM`,
     description: destination.description,
   };
 }

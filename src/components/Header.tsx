@@ -21,7 +21,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2">
           <span className="text-2xl">🌿</span>
           <span className="text-lg font-bold tracking-tight text-emerald-900">
-            Claude<span className="text-amber-600">Turismo</span>
+            RAY<span className="text-amber-600">DAM</span>
           </span>
         </Link>
 

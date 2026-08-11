@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ClaudeTurismo | Ecoturismo na Chapada das Mesas",
+  title: "RAYDAM | Ecoturismo na Chapada das Mesas",
   description:
-    "Roteiros, cachoeiras e aventuras guiadas na Chapada das Mesas, Maranhão. Monte seu pacote com a ClaudeTurismo.",
+    "Roteiros, cachoeiras e aventuras guiadas na Chapada das Mesas, Maranhão. Monte seu pacote com a RAYDAM.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

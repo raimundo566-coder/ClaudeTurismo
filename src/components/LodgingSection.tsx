@@ -7,13 +7,13 @@ export default function LodgingSection() {
     <section className="py-20">
       <Container>
         <p className="text-sm font-semibold uppercase tracking-wide text-amber-600">
-          Hospedagem parceira
+          Nossa hospedagem
         </p>
         <h2 className="mt-2 text-3xl font-bold text-emerald-900">
-          Chalés Raydam
+          Chalés RAYDAM
         </h2>
         <p className="mt-4 max-w-2xl text-stone-600">
-          Para completar sua expedição, indicamos os Chalés Raydam: hospedagem
+          Para completar sua expedição, fique nos Chalés RAYDAM: hospedagem
           em meio à mata, com deck e piscina natural para relaxar depois de
           um dia de aventura.
         </p>

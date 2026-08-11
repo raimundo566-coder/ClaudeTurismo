@@ -9,11 +9,12 @@ export default function Footer() {
           <div className="flex items-center gap-2">
             <span className="text-2xl">🌿</span>
             <span className="text-lg font-bold">
-              Claude<span className="text-amber-400">Turismo</span>
+              RAY<span className="text-amber-400">DAM</span>
             </span>
           </div>
           <p className="mt-3 text-sm text-emerald-200">
-            Turismo de aventura e ecoturismo na Chapada das Mesas, Maranhão.
+            Turismo de aventura e ecoturismo na Chapada das Mesas, Maranhão
+            — ecossistema de transição entre Amazônia e Cerrado.
           </p>
         </div>
 
@@ -36,7 +37,7 @@ export default function Footer() {
           <ul className="mt-3 space-y-2 text-sm text-emerald-200">
             <li>Carolina, Maranhão - Brasil</li>
             <li>(99) 99999-9999</li>
-            <li>contato@claudeturismo.com.br</li>
+            <li>contato@raydam.com.br</li>
           </ul>
         </div>
 
@@ -53,7 +54,7 @@ export default function Footer() {
       </Container>
 
       <div className="border-t border-emerald-900/40 py-6 text-center text-xs text-emerald-300">
-        © {new Date().getFullYear()} ClaudeTurismo. Todos os direitos reservados.
+        © {new Date().getFullYear()} RAYDAM. Todos os direitos reservados.
       </div>
     </footer>
   );

@@ -18,7 +18,7 @@ export async function generateMetadata({
   const pkg = getPackage(slug);
   if (!pkg) return {};
   return {
-    title: `${pkg.title} | ClaudeTurismo`,
+    title: `${pkg.title} | RAYDAM`,
     description: pkg.summary,
   };
 }

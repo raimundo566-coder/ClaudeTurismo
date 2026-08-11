@@ -4,13 +4,13 @@ import Container from "@/components/Container";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contato | ClaudeTurismo",
+  title: "Contato | RAYDAM",
   description: "Solicite um orçamento para o seu roteiro na Chapada das Mesas.",
 };
 
 const contactInfo = [
   { label: "Telefone / WhatsApp", value: "(99) 99999-9999" },
-  { label: "E-mail", value: "contato@claudeturismo.com.br" },
+  { label: "E-mail", value: "contato@raydam.com.br" },
   { label: "Endereço", value: "Carolina, Maranhão - Brasil" },
   { label: "Horário", value: "Seg a Sáb, 8h às 18h" },
 ];

@@ -23,16 +23,19 @@ export default function Home() {
         </p>
 
         <Container className="relative z-10 py-24 text-white">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-400">
+          <p className="text-2xl font-extrabold tracking-[0.15em] text-white">
+            RAY<span className="text-amber-400">DAM</span>
+          </p>
+          <p className="mt-3 text-sm font-semibold uppercase tracking-[0.2em] text-amber-400">
             Chapada das Mesas · Maranhão
           </p>
           <h1 className="mt-4 max-w-2xl text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
             Cachoeiras, trilhas e aventuras que ficam na memória
           </h1>
           <p className="mt-6 max-w-xl text-lg text-emerald-50">
-            A ClaudeTurismo cria roteiros guiados pelos destinos mais bonitos
-            da Chapada das Mesas, com segurança, conforto e guias locais
-            especializados.
+            A RAYDAM cria roteiros guiados pelos destinos mais bonitos da
+            Chapada das Mesas — um ecossistema de transição entre Amazônia e
+            Cerrado — com segurança, conforto e guias locais especializados.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
