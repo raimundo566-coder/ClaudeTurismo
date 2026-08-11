@@ -1,4 +1,4 @@
-# ClaudeTurismo
+# RAYDAM
 
 Site institucional de turismo de aventura e ecoturismo na Chapada das Mesas
 (Maranhão, Brasil).

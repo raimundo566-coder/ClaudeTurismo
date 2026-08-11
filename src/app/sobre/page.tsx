@@ -3,8 +3,8 @@ import Image from "next/image";
 import Container from "@/components/Container";
 
 export const metadata: Metadata = {
-  title: "Sobre | ClaudeTurismo",
-  description: "Conheça a história e os valores da ClaudeTurismo.",
+  title: "Sobre | RAYDAM",
+  description: "Conheça a história e os valores da RAYDAM.",
 };
 
 const values = [
@@ -30,8 +30,8 @@ export default function SobrePage() {
     <>
       <div className="relative h-[40vh] min-h-[280px] w-full">
         <Image
-          src="https://images.unsplash.com/photo-1500534623283-312aade485b7?q=80&w=1920&auto=format&fit=crop"
-          alt="Formações rochosas da Chapada das Mesas"
+          src="/images/estrada-chapada-das-mesas.png"
+          alt="Estrada com formação rochosa da Chapada das Mesas ao fundo"
           fill
           priority
           className="object-cover"
@@ -41,7 +41,7 @@ export default function SobrePage() {
           <p className="text-sm font-semibold uppercase tracking-wide text-amber-400">
             Sobre nós
           </p>
-          <h1 className="mt-2 text-4xl font-bold">Quem é a ClaudeTurismo</h1>
+          <h1 className="mt-2 text-4xl font-bold">Quem é a RAYDAM</h1>
         </Container>
       </div>
 
@@ -50,11 +50,13 @@ export default function SobrePage() {
           <div>
             <h2 className="text-2xl font-bold text-emerald-900">Nossa história</h2>
             <p className="mt-4 text-stone-700">
-              Nascemos em Carolina, no coração da Chapada das Mesas, com o
-              objetivo de mostrar ao mundo a beleza das cachoeiras, rios e
-              formações rochosas que marcam essa região do Maranhão. Ao longo
-              dos anos, construímos roteiros pensados para todos os perfis de
-              viajante, sempre ao lado de guias e famílias locais.
+              Nascemos em Carolina, no coração da Chapada das Mesas, uma
+              região de transição entre a Amazônia e o Cerrado. Nosso
+              objetivo é mostrar ao mundo a beleza das cachoeiras, rios,
+              trilhas e formações rochosas que marcam esse ecossistema único
+              do Maranhão. Ao longo dos anos, construímos roteiros pensados
+              para todos os perfis de viajante, sempre ao lado de guias e
+              famílias locais.
             </p>
             <p className="mt-4 text-stone-700">
               Hoje somos referência em ecoturismo e turismo de aventura na

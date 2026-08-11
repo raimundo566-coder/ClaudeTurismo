@@ -17,6 +17,7 @@ export type Package = {
   highlights: string[];
   itinerary: { day: string; description: string }[];
   image: string;
+  gallery?: { src: string; alt: string }[];
 };
 
 export const destinations: Destination[] = [
@@ -26,8 +27,7 @@ export const destinations: Destination[] = [
     tagline: "Águas cristalinas em meio à mata",
     description:
       "Uma das quedas d'água mais fotografadas da Chapada das Mesas, com piscina natural perfeita para banho e trilhas de acesso fácil.",
-    image:
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/estrada-chapada-das-mesas.png",
   },
   {
     slug: "cachoeira-de-sao-romao",
@@ -36,7 +36,7 @@ export const destinations: Destination[] = [
     description:
       "Queda d'água imponente cercada de vegetação nativa, ideal para quem busca contato direto com a natureza e boas fotos.",
     image:
-      "https://images.unsplash.com/photo-1546587348-d12660c30c50?q=80&w=1200&auto=format&fit=crop",
+      "https://upload.wikimedia.org/wikipedia/commons/7/79/Cachoeira_de_Sao_Romao.jpg",
   },
   {
     slug: "chapada-das-mesas-mirante",
@@ -44,8 +44,7 @@ export const destinations: Destination[] = [
     tagline: "Pôr do sol sobre as mesas rochosas",
     description:
       "Formações rochosas em formato de mesa que dão nome à região, com vista panorâmica ideal para o entardecer.",
-    image:
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/estrada-chapada-das-mesas.png",
   },
   {
     slug: "rio-novo",
@@ -53,8 +52,15 @@ export const destinations: Destination[] = [
     tagline: "Bóia-cross e paisagens de tirar o fôlego",
     description:
       "Trecho de águas calmas e cristalinas, perfeito para descida de bóia e passeios de canoa em família.",
-    image:
-      "https://images.unsplash.com/photo-1439066615861-d1af74d74000?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/piscina-natural-raydam.webp",
+  },
+  {
+    slug: "trilha-quadriciclo",
+    name: "Trilha de Quadriciclo",
+    tagline: "Adrenalina em meio à mata fechada",
+    description:
+      "Percurso guiado de quadriciclo por trilhas de terra em meio à vegetação nativa, com paradas para fotos e contato direto com a natureza.",
+    image: "/images/trilha-quadriciclo.webp",
   },
 ];
 
@@ -80,7 +86,7 @@ export const packages: Package[] = [
       { day: "Dia 3", description: "Mirante da Chapada ao amanhecer e retorno." },
     ],
     image:
-      "https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?q=80&w=1200&auto=format&fit=crop",
+      "https://upload.wikimedia.org/wikipedia/commons/7/79/Cachoeira_de_Sao_Romao.jpg",
   },
   {
     slug: "aventura-rio-novo",
@@ -101,8 +107,7 @@ export const packages: Package[] = [
       { day: "Manhã", description: "Saída, deslocamento até o Rio Novo e briefing de segurança." },
       { day: "Tarde", description: "Bóia-cross, canoagem, piquenique e retorno." },
     ],
-    image:
-      "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/piscina-natural-raydam.webp",
   },
   {
     slug: "pordosol-mirante",
@@ -122,8 +127,31 @@ export const packages: Package[] = [
     itinerary: [
       { day: "Tarde", description: "Saída, trilha guiada até o mirante e contemplação do pôr do sol." },
     ],
-    image:
-      "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/estrada-chapada-das-mesas.png",
+  },
+  {
+    slug: "trilha-quadriciclo-raydam",
+    title: "Trilha de Quadriciclo pela Mata",
+    destinationSlug: "trilha-quadriciclo",
+    duration: "meio período",
+    groupSize: "até 10 pessoas",
+    price: 220,
+    summary:
+      "Roteiro guiado de quadriciclo por trilhas de terra em meio à mata fechada, com direito a paradas para fotos e um mergulho na piscina natural dos Chalés Raydam ao final.",
+    highlights: [
+      "Quadriciclos e equipamentos de segurança inclusos",
+      "Guia local durante todo o percurso",
+      "Parada final na piscina natural dos Chalés Raydam",
+      "Ideal para grupos de amigos e famílias",
+    ],
+    itinerary: [
+      { day: "Tarde", description: "Briefing de segurança, trilha guiada de quadriciclo pela mata e descanso na piscina natural." },
+    ],
+    image: "/images/trilha-quadriciclo.webp",
+    gallery: [
+      { src: "/images/trilha-quadriciclo.webp", alt: "Trilha de quadriciclo em meio à mata" },
+      { src: "/images/quadriciclo-ilustrativo-ia.png", alt: "Ilustração gerada por IA da trilha de quadriciclo" },
+    ],
   },
 ];
 

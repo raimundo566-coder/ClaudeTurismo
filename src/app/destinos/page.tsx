@@ -4,7 +4,7 @@ import DestinationCard from "@/components/DestinationCard";
 import { destinations } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Destinos | ClaudeTurismo",
+  title: "Destinos | RAYDAM",
   description: "Conheça os principais destinos da Chapada das Mesas.",
 };
 

@@ -4,7 +4,7 @@ import PackageCard from "@/components/PackageCard";
 import { packages } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Pacotes | ClaudeTurismo",
+  title: "Pacotes | RAYDAM",
   description: "Pacotes e passeios guiados pela Chapada das Mesas.",
 };
 

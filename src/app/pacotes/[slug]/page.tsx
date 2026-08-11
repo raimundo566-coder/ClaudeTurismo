@@ -18,7 +18,7 @@ export async function generateMetadata({
   const pkg = getPackage(slug);
   if (!pkg) return {};
   return {
-    title: `${pkg.title} | ClaudeTurismo`,
+    title: `${pkg.title} | RAYDAM`,
     description: pkg.summary,
   };
 }
@@ -75,6 +75,30 @@ export default async function PackagePage({
               </li>
             ))}
           </ol>
+
+          {pkg.gallery && (
+            <>
+              <h2 className="mt-10 text-2xl font-bold text-emerald-900">Fotos</h2>
+              <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                {pkg.gallery.map((photo) => (
+                  <div key={photo.src} className="relative h-56 overflow-hidden rounded-xl">
+                    <Image
+                      src={photo.src}
+                      alt={photo.alt}
+                      fill
+                      className="object-cover"
+                      sizes="(min-width: 640px) 50vw, 100vw"
+                    />
+                    {photo.alt.includes("Ilustração") && (
+                      <span className="absolute bottom-2 right-2 rounded-full bg-black/60 px-2 py-1 text-[10px] text-white">
+                        Ilustração gerada por IA
+                      </span>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
         </div>
 
         <aside className="h-fit rounded-2xl border border-stone-200 bg-stone-50 p-6">
