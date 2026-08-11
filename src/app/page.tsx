@@ -3,6 +3,7 @@ import Link from "next/link";
 import Container from "@/components/Container";
 import DestinationCard from "@/components/DestinationCard";
 import PackageCard from "@/components/PackageCard";
+import LodgingSection from "@/components/LodgingSection";
 import { destinations, packages } from "@/lib/data";
 
 export default function Home() {
@@ -113,6 +114,8 @@ export default function Home() {
           </div>
         </Container>
       </section>
+
+      <LodgingSection />
 
       <section className="py-20">
         <Container className="rounded-3xl bg-emerald-900 px-8 py-14 text-center text-white sm:px-16">

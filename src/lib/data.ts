@@ -17,6 +17,7 @@ export type Package = {
   highlights: string[];
   itinerary: { day: string; description: string }[];
   image: string;
+  gallery?: { src: string; alt: string }[];
 };
 
 export const destinations: Destination[] = [
@@ -44,8 +45,7 @@ export const destinations: Destination[] = [
     tagline: "Pôr do sol sobre as mesas rochosas",
     description:
       "Formações rochosas em formato de mesa que dão nome à região, com vista panorâmica ideal para o entardecer.",
-    image:
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/estrada-chapada-das-mesas.png",
   },
   {
     slug: "rio-novo",
@@ -55,6 +55,14 @@ export const destinations: Destination[] = [
       "Trecho de águas calmas e cristalinas, perfeito para descida de bóia e passeios de canoa em família.",
     image:
       "https://images.unsplash.com/photo-1439066615861-d1af74d74000?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    slug: "trilha-quadriciclo",
+    name: "Trilha de Quadriciclo",
+    tagline: "Adrenalina em meio à mata fechada",
+    description:
+      "Percurso guiado de quadriciclo por trilhas de terra em meio à vegetação nativa, com paradas para fotos e contato direto com a natureza.",
+    image: "/images/trilha-quadriciclo.webp",
   },
 ];
 
@@ -124,6 +132,30 @@ export const packages: Package[] = [
     ],
     image:
       "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    slug: "trilha-quadriciclo-raydam",
+    title: "Trilha de Quadriciclo pela Mata",
+    destinationSlug: "trilha-quadriciclo",
+    duration: "meio período",
+    groupSize: "até 10 pessoas",
+    price: 220,
+    summary:
+      "Roteiro guiado de quadriciclo por trilhas de terra em meio à mata fechada, com direito a paradas para fotos e um mergulho na piscina natural dos Chalés Raydam ao final.",
+    highlights: [
+      "Quadriciclos e equipamentos de segurança inclusos",
+      "Guia local durante todo o percurso",
+      "Parada final na piscina natural dos Chalés Raydam",
+      "Ideal para grupos de amigos e famílias",
+    ],
+    itinerary: [
+      { day: "Tarde", description: "Briefing de segurança, trilha guiada de quadriciclo pela mata e descanso na piscina natural." },
+    ],
+    image: "/images/trilha-quadriciclo.webp",
+    gallery: [
+      { src: "/images/trilha-quadriciclo.webp", alt: "Trilha de quadriciclo em meio à mata" },
+      { src: "/images/quadriciclo-ilustrativo-ia.png", alt: "Ilustração gerada por IA da trilha de quadriciclo" },
+    ],
   },
 ];
 
